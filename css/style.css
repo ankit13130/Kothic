@@ -1,4 +1,4 @@
-/* @import url(./customcursor.css);*/ 
+@import url(./customcursor.css); 
 @import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css);
 @import url(./swiper.css);
 @import url(./page2.css);
@@ -9,11 +9,11 @@
     list-style: none;
     font-family:"Gilroy";
     /* pointer-events: all; */
+    cursor: none;
 }
 html,body{
     width: 100%;
     overflow-x: hidden;
-    /* cursor: none; */
 }
 #main{
     min-height: 100vh;

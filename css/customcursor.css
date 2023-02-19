@@ -1,5 +1,6 @@
-.circle{
-    height: 24px;
+/* first cursor */
+/* .circle{
+  height: 24px;
     width: 24px;
     border-radius: 15px;
     background-color: black;
@@ -7,17 +8,17 @@
     top: 0;
     left: 0;
     z-index: 999;
-    /* background: linear-gradient(90deg, #1f005c, #48005f, #680060, #830060, #9c155f, #b22c5e, #c5415d, #d5585c, #e36e5c, #ef865e, #f89d63, #ffb56b); */
-    /* background: linear-gradient(345deg, #1f005c, #3e0075, #67008d, #9a00a6, #be00a7, #d70092, #ef0074, #ff094f, #ff2135, #ff4f3a, #ff8752, #ffb56b); */
-    /* -webkit-animation: glowing 1s ease-in-out infinite alternate; */
-}
-/* 
-.circle {
+    background: linear-gradient(90deg, #1f005c, #48005f, #680060, #830060, #9c155f, #b22c5e, #c5415d, #d5585c, #e36e5c, #ef865e, #f89d63, #ffb56b);
+    background: linear-gradient(345deg, #1f005c, #3e0075, #67008d, #9a00a6, #be00a7, #d70092, #ef0074, #ff094f, #ff2135, #ff4f3a, #ff8752, #ffb56b);
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  } */
+  /* 
+  .circle {
     -moz-animation: glowing 1s ease-in-out infinite alternate;
     animation: glowing 1s ease-in-out infinite alternate;
   } */
-
-/* @-webkit-keyframes glowing {
+  
+  /* @-webkit-keyframes glowing {
     from {
       box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -25,3 +26,71 @@
       box-shadow: 0 0 5px #fff, 0 0 5px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   } */
+  
+  /* second cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    /* transition-duration: 200ms; */
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+    z-index: 9999;
+}
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 0.5s infinite alternate;
+}
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+   }
+    to {
+        transform: scale(0.7);
+   }
+}
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+   }
+    to {
+        transform: scale(0.4);
+   }
+}
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+   }
+    50% {
+        transform: scale(3);
+   }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+   }
+}
+.expand {
+    animation: cursorAnim3 0.5s forwards;
+    border: 1px solid red;
+}
+p {
+    color: white;
+    font-family: 'arial';
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.4em;
+}
+p a {
+    color: teal;
+}
