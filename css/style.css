@@ -1,0 +1,85 @@
+/* @import url(./customcursor.css);*/ 
+@import url(./swiper.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:"Gilroy";
+    /* pointer-events: all; */
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    /* cursor: none; */
+}
+#main{
+    min-height: 100vh;
+    background-color: salmon;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: pink;
+}
+nav{
+    width: 100%;
+    padding: 0.5vw;
+    position: fixed;
+}
+nav #cover{
+    /* width: 100%; */
+    padding: 0.5vw 1.5vw;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nleft{
+    display: flex;
+}
+#nleft>h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(31, 25, 25);
+    /* cursor: pointer; */
+}
+#nleft>h1::after{
+    content: 'cothic';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    -webkit-text-stroke: black 1px;
+    color: transparent;
+}
+#nleft #menu{
+    display: flex;
+    align-items: center;
+}
+#nleft #menu li{
+    margin-left: 1.5vw;
+    padding: 0.5vw 1vw;
+    border-radius: 50px;
+    transition: background-color ease-in-out 0.5s;
+}
+#nleft #menu li:hover{
+    background-color: salmon;
+    cursor: pointer;
+}
+#nright{
+    display: flex;
+    align-items: center;
+}
+#nright img{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+/* hero section */
+#sectionA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
