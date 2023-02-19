@@ -1,5 +1,7 @@
 /* @import url(./customcursor.css);*/ 
+@import url(https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css);
 @import url(./swiper.css);
+@import url(./page2.css);
 *{
     padding: 0;
     margin: 0;
@@ -24,8 +26,9 @@ section{
 }
 nav{
     width: 100%;
-    padding: 0.5vw;
+    padding: 0.5vw 2vw;
     position: fixed;
+    z-index: 999;
 }
 nav #cover{
     /* width: 100%; */
@@ -47,7 +50,7 @@ nav #cover{
     /* cursor: pointer; */
 }
 #nleft>h1::after{
-    content: 'cothic';
+    content: 'kothic';
     position: absolute;
     top: 5px;
     left: 5px;
