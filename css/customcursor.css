@@ -45,7 +45,7 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    border: 8px solid gray;
+    border: 8px solid rgb(0, 0, 0);
     border-radius: 50%;
     opacity: 0.5;
     top: -8px;
@@ -84,7 +84,7 @@
     animation: cursorAnim3 0.5s forwards;
     border: 1px solid red;
 }
-p {
+/* p {
     color: white;
     font-family: 'arial';
     text-align: center;
@@ -93,4 +93,4 @@ p {
 }
 p a {
     color: teal;
-}
+} */

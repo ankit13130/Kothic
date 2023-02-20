@@ -15,8 +15,10 @@ var swiper2 = new Swiper(".left .mySwiper2", {
       swiper: swiper,
     },
     loop:true,
-    autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-    },
 });
+
+document.querySelector(".table").addEventListener("click",()=>{
+  document.querySelector(".food").classList.toggle("hide");
+})
+
+//date calculator
