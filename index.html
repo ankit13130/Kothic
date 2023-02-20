@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- Custom Cursor -->
+    <div class="cursor"></div>
     <!-- <div id="customcursor">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -28,7 +29,46 @@
         <div class="circle"></div>
         <div class="circle"></div>
     </div> -->
-    <div class="cursor"></div>
+
+    <!-- loading animation -->
+    <div id="loading">
+        <svg viewBox="0 0 1800 600">
+          <symbol id="s-text">
+            <text text-anchor="middle"
+                  x="50%"
+                  y="25%"
+                  class="webcoderskull"
+                  >
+              HOTELS
+            </text>
+        
+        
+            <text text-anchor="middle"
+                  x="50%"
+                  y="68%"
+                  class="text--line"
+                  >
+             KOTHICS
+            </text>
+            
+          </symbol>
+          
+          <g class="g-ants">
+            <use xlink:href="#s-text"
+              class="webcoderskull-1"></use>     
+            <use xlink:href="#s-text"
+              class="webcoderskull-1"></use>     
+            <use xlink:href="#s-text"
+              class="webcoderskull-1"></use>     
+            <use xlink:href="#s-text"
+              class="webcoderskull-1"></use>     
+            <use xlink:href="#s-text"
+              class="webcoderskull-1"></use>     
+          </g>
+          
+          
+        </svg>
+    </div>
 
     <div id="main">
         <!-- Navbar -->
@@ -46,8 +86,10 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/customcursor.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/loading.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
