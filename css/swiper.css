@@ -1,4 +1,11 @@
 /* index.html */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+:root{
+    --font-family: 'Arapey', serif;
+
+}
 .swiper {
     width: 100%;
     height: 100%;
@@ -18,9 +25,10 @@
 .swiper-slide h4{
     margin-top: 5px;
     font-size: 1.5rem;
-    color: rgb(231, 200, 25);
+    color:rgb(3, 22, 1);
     font-weight: 400;
     letter-spacing: 2px;
+    font-family:var(--font-family);
 }
 
 .swiper-slide img {

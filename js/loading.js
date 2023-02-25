@@ -14,7 +14,7 @@ gsap.fromTo('.webcoderskull' ,{
         x:0,
         opacity:1,
         duration: 2,
-        delay : 3.5,
+        delay : 1,
     });
 
 gsap.fromTo('.text--line' ,{

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kothic | Hotel</title>
-    <!-- <link rel="stylesheet" href="./css/customcursor.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kothic | Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <!-- <div id="customcursor">
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <!-- <div id="customcursor">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -30,29 +31,25 @@
         <div class="circle"></div>
     </div> -->
 
-    <!-- loading animation -->
-    <div id="loading">
+  <!-- loading animation -->
+  <div id="loading">
         <svg viewBox="0 0 1800 600">
           <symbol id="s-text">
-            <text text-anchor="middle"
+            <!-- <text text-anchor="middle"
                   x="50%"
                   y="25%"
                   class="webcoderskull"
                   >
-              HOTELS
-            </text>
-        
-        
+              HOTEL'S
+            </text> -->
             <text text-anchor="middle"
                   x="50%"
-                  y="68%"
+                  y="55%"
                   class="text--line"
                   >
-             KOTHICS
+             KOTHIC
             </text>
-            
           </symbol>
-          
           <g class="g-ants">
             <use xlink:href="#s-text"
               class="webcoderskull-1"></use>     
@@ -64,25 +61,145 @@
               class="webcoderskull-1"></use>     
             <use xlink:href="#s-text"
               class="webcoderskull-1"></use>     
-          </g>
-          
-          
+          </g>          
         </svg>
+  </div>
+
+  <div id="main">
+    <!-- Navbar -->
+    <nav> </nav>
+
+    <!-- hero section -->
+    <section id="sectionA">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </section>
+    <section>
+      <h1>Hotel Avaliable</h1>
+      <div id="card-area" style="object-fit: cover; margin-top: -8rem;">
+
+
+      </div>
+
+
+      <div id="card-area2" style="display: flex;   margin-top: 12rem;
+            margin-right: 15rem;">
+
+      </div>
+
+
+      <div id="card-area3" style="display: flex;   margin-top: 12rem;
+           margin-right: 15rem; ">
+
+      </div>
+
+    </section>
+    <div id="row">
+
+      <h1>HOTEL KOTHIC </h1>
+      <h1>HOTEL KOTHIC </h1>
+      <h1> HOTEL KOTHIC</h1>
+      <h1>HOTEL KOTHIC </h1>
+      <h1>HOTEL KOTHIC </h1>
+      <h1> HOTEL KOTHIC</h1>
+
+
     </div>
+    <section>
+      <h1>Feedback</h1>
 
-    <div id="main">
-        <!-- Navbar -->
-        <nav></nav>
-
-        <!-- hero section -->
-        <section id="sectionA">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper"></div>
-                <!-- <div class="swiper-pagination"></div> -->
+      <div class="container">
+        <div class="veiw-box">
+          <div id="testimonials">
+            
+            <div class="user">
+              <img src="./assets/user2.jpg" alt="">
+              <p> Location was perfect, stuff very friendly, room was nice and clean not too big but it was perfect for
+                us..</p>
+              <h3>Riley Olie</h3>
             </div>
-        </section>
-    </div>
+
+            <div class="user space">
+              <img src="./assets/user3.jpg" alt="">
+              <p>lots for the kids to so and overall wonderful location if you want to leave the grounds.</p>
+              <h3>Steve McCurry</h3>
+            </div>
+
+            <div class="user">
+              <img src="./assets/user1.jpg" alt="">
+              <p>.The apartment was spacious and had two beautiful balconies. The house is surrounded by palm trees and
+                lots of animals. </p>
+              <h3>Merlin Nguyen</h3>
+            </div>
+          </div>
+          <div class="controls">
+            <span id="control1"></span>
+            <span id="control2" class="active"></span>
+            <span id="control3"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="gap">
+          <h2>About Us </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+            provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+
+        </div>
+
+        <div class="gap">
+          <h2>Useful Links</h2>
+          <a href="#">Rooms</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+
+        <div class="gap" id="socialLink">
+          <h2>Social Link</h2>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+
+        <div class="gap" >
+          <h2>Have A Question</h2>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span>
+              203 Ayodhya Bypass, Bhopal
+            </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span>
+              +84545 37534 48
+            </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>
+              info@Kothic.com
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">&copy; All Right Reserved 2023</div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -90,6 +207,9 @@
     <script src="./js/customcursor.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/loading.js"></script>
+    <script src="./js/Ascy.js"></script>
+    <script src="./js/sec.js"></script>
+    <script src="./js/Reviewscript.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
