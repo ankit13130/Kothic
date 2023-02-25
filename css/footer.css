@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+:root {
+    --font-family: 'Arapey', serif;
+    --font-size: 1.6rem;
+
+}
+
+.footer {
+    color: #566756;
+    color: #688063;
+    color: #899582;
+    color: #D8D3BE;
+
+
+
+    margin-top: -8rem;
+    background: #899582;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.gap {
+    white-space: nowrap;
+    margin-right: 55px;
+ margin-left: 35px;
+}
+
+
+#socialLink i {
+
+    padding-left: 50px;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.footer h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: var(--font-family);
+
+}
+
+.footer a {
+    font-family: var(--font-family);
+
+    display: flex;
+font-size: var(--font-size);    text-decoration: none;
+    color: #D8D3BE;
+}
+
+.footer p {
+    width: 30vw;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(19, 0, 0);
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    white-space: pre-wrap;
+
+}
+
+.footer span{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+#row {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-bottom: 10vh;
+
+
+}
+
+
+#row hr {
+    width: 100%;
+    border: 2px solid greenyellow;
+}
+
+#row {
+    box-shadow: 4px 2px 15px 10px #688063;
+
+}
+
+#row::-webkit-scrollbar {
+    display: none;
+}
+
+#row h1 {
+    color: transparent;
+    -webkit-text-stroke-width: .005px;
+    margin-left: 90px;
+    -webkit-text-stroke-color: #D8D3BE;
+    font-size: 50px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(calc(0% - 90px));
+        /* transform: translate(-100%); */
+    }
+}
